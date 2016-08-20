@@ -1,0 +1,47 @@
+{mobiles: [
+	{
+		
+		"id":7 ,
+		"title": "sdfyaj",
+		"image": "zxc",
+		"price":24 
+	},
+
+	{
+		
+		"id": ,
+		"title": "",
+		"image": "",
+		"price": 
+	},
+
+	{
+		
+		"id": ,
+		"title": "",
+		"image": "",
+		"price": 
+	},
+	{
+		
+		"id": ,
+		"title": "",
+		"image": "",
+		"price": 
+	},
+	{
+		
+		"id": ,
+		"title": "",
+		"image": "",
+		"price": 
+	},
+
+	{
+		
+		"id": ,
+		"title": "",
+		"image": "",
+		"price": 
+	},
+]}
