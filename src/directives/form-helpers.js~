@@ -25,7 +25,17 @@ angular.module('angular-login.directives', [])
     }
   };
 })
-
+/**
+ * Directive to manage valid/invalid states of remote-validated Data.
+ * It stores an internal array of values declared invalid by the server.
+ * Generates the form error specified in case the user re-types the same invalid values,
+ * clears the errors in case the user changes the ngModel.
+ *
+ * usage:
+ * <input type="email" ng-model="email" remote-validated="used">
+ *
+ * NOTE: Your controllers have to make the field invalid in case *your* server says so.
+ */
 .directive('remoteValidated', function () {
   return {
     restrict: 'A',

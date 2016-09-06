@@ -191,34 +191,7 @@ parent.main.document.order.ship_phone.value=shipform.phoneb
 
 }
 
-function add_ship_details(shipform)
-{
 
-shipform.comments = parent.main.document.order.comments.value
-shipform.f_namea = parent.main.document.order.name_first.value
-shipform.l_namea= parent.main.document.order.name_last.value
-shipform.email = parent.main.document.order.email.value
-shipform.ad_onea = parent.main.document.order.address1.value
-shipform.ad_twoa = parent.main.document.order.address2.value
-shipform.citya = parent.main.document.order.city.value
-shipform.statea =parent.main.document.order.state.value
-shipform.zipa = parent.main.document.order.zip.value
-shipform.countrya =parent.main.document.order.country.value
-shipform.phonea = parent.main.document.order.phone.value
-shipform.faxa = parent.main.document.order.fax.value
-shipform.mailon = parent.main.document.order.mail_list.value
-shipform.sameflag = parent.main.document.order.same_flag.value
-shipform.shipname=parent.main.document.order.ship_name.value
-shipform.ad_oneb = parent.main.document.order.ship_address1.value
-shipform.ad_twob=parent.main.document.order.ship_address2.value
-shipform.shipb = parent.main.document.order.ship_city.value
-shipform.stateb=parent.main.document.order.ship_state.value
-shipform.zipb=parent.main.document.order.ship_zip.value
-shipform.countryb=parent.main.document.order.ship_country.value
-shipform.phoneb=parent.main.document.order.ship_phone.value
-}
-
-// end of shipping details object handling
 
 function item_tot_price(i)
 {
@@ -265,15 +238,6 @@ if ((itemlist[k].code ==  parent.main.document.form1.elements[i].name) && (k<=it
  }   
 }
 
-function item_quan(code)
-{
-var loc = check_if_in(code)
-if (loc > 0)
- var quantities = itemlist[loc].quan
-else
- var quantities = 0;
-return quantities
-}
 
 function display_pic(graphic,price)
 {
@@ -286,37 +250,6 @@ parent.frames[0].document.write(en_astr);
 parent.frames[0].document.close()
 }
 
-function createArray(n)
-//n		size of array
-//init	what you want all values initialized to
-{               this.length = n
-		var i = 0
-		for (i = 1 ; i < n ; i++) 
-			this[i] = null;	
-                return this
-}
-
-
-function product(code,price,desc,quan,url)
-{ this.price = 0
-  this.code = code
-  this.price = price
-  this.desc = desc
-  this.quan = quan
-  this.url = url
- return this;
-}
-
-var itemlist = new createArray(50);
-var temp_array = new createArray(50);
-
-function initialize_arrays(arraysa)
-{
-for (i = 1;i < maxarray;i++)
-{
-arraysa[i] = new product('',0,'',0,'')
-}
-}
 
 function updatelogin_log()
 {

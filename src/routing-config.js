@@ -11,10 +11,7 @@
       'admin'
     ],
 
-    /*
-    Build out all the access levels you want referencing the roles listed above
-    You can use the "*" symbol to represent access to all roles
-     */
+    
     accessLevels: {
       'public' : '*',
       'anon': ['public'],
@@ -42,10 +39,7 @@
     return userRoles;
   }
 
-  /*
-  This method builds access level bit masks based on the accessLevelDeclaration parameter which must
-  contain an array for each access level containing the allowed user roles.
-   */
+  
   function buildAccessLevels(accessLevelDeclarations, userRoles) {
 
     var accessLevels = {},
@@ -61,7 +55,7 @@
           for (role in userRoles) {
             resultBitMask += "1";
           }
-          //accessLevels[level] = parseInt(resultBitMask, 2);
+          
           accessLevels[level] = {
             bitMask: parseInt(resultBitMask, 2),
             title: accessLevelDeclarations[level]

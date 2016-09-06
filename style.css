@@ -52,8 +52,8 @@ button,.button {
     left: 0;
     right: 0;
     /* text-align: center; */
-    padding: 4px;
-    height: 71px;
+    padding: 0px;
+    height: 100px;
     width: 255px;
     background: #2c3f52;
     color: lightgray;
@@ -83,7 +83,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, nav, 
 .product-list figure:hover figcaption {
 	opacity: 1;
 	transform: translateY(0px);
-	transition: transform 0.4s, opacity 0.1s;
+	transition: transform 0.2s, opacity 0.1s;
 }
 
 .shopping-cart {
@@ -142,7 +142,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, nav, 
 
 .shopping-cart button {
 	position: absolute;
-	bottom: 0px;
+	bottom: 5px;
 	right: 16px;
 }
 
